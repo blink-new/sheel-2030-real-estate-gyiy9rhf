@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { Toaster } from 'react-hot-toast'
 import { LanguageProvider } from './contexts/LanguageContext'
 import Header from './components/layout/Header'
 import Footer from './components/layout/Footer'
@@ -22,6 +23,7 @@ function App() {
           </main>
           <Footer />
           <WhatsAppFloat />
+          <Toaster position="top-right" />
         </div>
       </Router>
     </LanguageProvider>
